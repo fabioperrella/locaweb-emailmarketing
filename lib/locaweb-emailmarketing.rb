@@ -1,4 +1,5 @@
 require "locaweb-emailmarketing/version"
+require "locaweb-emailmarketing/models"
 
 module Locaweb
   module Emailmarketing
