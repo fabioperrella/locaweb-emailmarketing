@@ -1,12 +1,16 @@
 module Locaweb
   module Emailmarketing
     class Client
-      def initialize(auth_key)
-        @auth_key = auth_key
+
+      def initialize(options = {})
+        options.assert_valid_keys(:auth_key, :base_url)
+        @options = options
+        @auth_key = options[:auth_key]
+        @base_url = options[:base_url]
       end
 
       def accounts
-        @account ||= AccountClient.new @auth_key
+        @account ||= AccountClient.new @options
       end
 
       # def method_missing(method_name, *args)

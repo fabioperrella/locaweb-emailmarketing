@@ -3,7 +3,7 @@ require 'spec_helper'
 
 describe Locaweb::Emailmarketing::Client do
   describe ".accounts" do
-    let(:client) { Client.new "apikey" }
+    let(:client) { Client.new auth_key: "apikey", base_url: 'http://lalapopo' }
 
     it "calls account method name" do
       account_client_mock = mock 'AccountClient'
