@@ -3,9 +3,9 @@ module Locaweb
     class Client
 
       def initialize(options = {})
-        options.assert_valid_keys(:auth_key, :base_url)
+        options.assert_valid_keys(:auth_token, :base_url)
         @options = options
-        @auth_key = options[:auth_key]
+        @auth_token = options[:auth_token]
         @base_url = options[:base_url]
       end
 

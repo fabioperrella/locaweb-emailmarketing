@@ -8,41 +8,67 @@ http_interactions:
       string: ''
     headers:
       Accept:
-      - ! '*/*; q=0.5, application/xml'
+      - application/json
       Accept-Encoding:
       - gzip, deflate
+      X-Auth-Token:
+      - Nt5skc1xXsvKKSsyp3Bsx7ABNdJz9pc1uA9kyTdjnJkr
       User-Agent:
       - Ruby
   response:
     status:
-      code: 401
-      message: Unauthorized
+      code: 200
+      message: !binary |-
+        T0s=
     headers:
-      Server:
-      - nginx/1.1.2
-      Date:
-      - Tue, 25 Dec 2012 14:52:06 GMT
-      Content-Type:
-      - text/html; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Status:
-      - 401 Unauthorized
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - f6a1da5d6a99c6447c18f66b763a0d48
-      X-Runtime:
-      - '0.007803'
-      X-Rack-Cache:
-      - miss
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbngvMS4xLjI=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAyNSBEZWMgMjAxMiAxNTowODo0NiBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "RXRhZw==":
+      - !binary |-
+        ImJiZDU5NGUzNGZlZDk5ODk1ZjliMGZlYzdhMmU5OWIzIg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        MGQ5MTYyMTRjMzBiOTdlYjU3MjI1YWEzNWZhNjE0ODQ=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMTQ4OTU=
+      !binary "WC1SYWNrLUNhY2hl":
+      - !binary |-
+        bWlzcw==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
     body:
-      encoding: US-ASCII
-      string: ! ' '
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAzXKywqAIBSE4XeZdYvsRvkc7SLCVEIoCzstQnz3TkGz/OaP
+        cGS3E3KIcAYSdW660rZzUZSVnmvddPk7gQzGnceq7smrzXJJwamVmc3/1n+W
+        Rla1METoKwTrCVJkoJ34lSKlBzOB22t3AAAA
     http_version: 
-  recorded_at: Tue, 25 Dec 2012 14:52:06 GMT
+  recorded_at: Tue, 25 Dec 2012 15:08:47 GMT
 recorded_with: VCR 2.3.0

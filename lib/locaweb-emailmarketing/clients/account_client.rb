@@ -5,14 +5,15 @@ module Locaweb
     class AccountClient
       def initialize(options = {})
         #TODO: refactor
-        options.assert_valid_keys(:auth_key, :base_url)
+        options.assert_valid_keys(:auth_token, :base_url)
         @options = options
-        @auth_key = options[:auth_key]
+        @auth_token = options[:auth_token]
         @base_url = options[:base_url]
       end
 
       def all
-        RestClient.get "#{@base_url}/accounts"
+        response = RestClient.get "#{@base_url}/accounts", "X-Auth-Token" => @auth_token, accept: :json
+        JSON response
       end
     end
   end

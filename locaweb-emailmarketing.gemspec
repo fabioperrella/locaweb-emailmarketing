@@ -26,4 +26,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "vcr"
   s.add_runtime_dependency "activesupport"
   s.add_runtime_dependency "rest-client"
+  s.add_runtime_dependency "json"
 end
