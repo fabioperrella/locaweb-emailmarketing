@@ -1,7 +1,6 @@
-$:.unshift(File.expand_path('../../lib', __FILE__))
-
 require 'rspec'
 require 'locaweb-emailmarketing'
+require 'pry'
 
 RSpec.configure do |config|
   # some (optional) config here
