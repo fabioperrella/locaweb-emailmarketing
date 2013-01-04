@@ -20,9 +20,18 @@ describe Locaweb::Emailmarketing::AccountClient do
   describe ".get" do
     it "returns the given account" do
       VCR.use_cassette('accounts_get') do
-        account_client.get('50e66d8abf8d791719000001').should include({
+        account_client.get(trial_account_id).should include({
           "id"=> trial_account_id , "display_name"=>"trial", "plan_name"=>"Trial"
         })
+      end
+    end
+  end
+
+  describe ".update" do
+    it "updates given account" do
+      VCR.use_cassette('accounts_update') do
+        account_client.update(trial_account_id, return_path_domain: 'trial3.newssender.com.br')
+        account_client.get(trial_account_id).should include({"return_path_domain" => 'trial3.newssender.com.br'})
       end
     end
   end

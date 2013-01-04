@@ -1,0 +1,125 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50e66d8abf8d791719000001
+    body:
+      encoding: US-ASCII
+      string: ! '{"account":{"return_path_domain":"trial3.newssender.com.br"}}'
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - Nt5skc1xXsvKKSsyp3Bsx7ABNdJz9pc1uA9kyTdjnJkr
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '61'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - nginx/1.1.2
+      Date:
+      - Fri, 04 Jan 2013 21:39:49 GMT
+      Connection:
+      - keep-alive
+      Status:
+      - 204 No Content
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 37ff3b49550aee96707f8b4030c74a7c
+      X-Runtime:
+      - '0.023486'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: US-ASCII
+      string: ''
+    http_version: 
+  recorded_at: Fri, 04 Jan 2013 21:39:50 GMT
+- request:
+    method: get
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50e66d8abf8d791719000001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - Nt5skc1xXsvKKSsyp3Bsx7ABNdJz9pc1uA9kyTdjnJkr
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbngvMS4xLjI=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAwNCBKYW4gMjAxMyAyMTozOTo0OSBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "RXRhZw==":
+      - !binary |-
+        Ijg5NjRiNGMwYjJmNDg2ZWIwMWU5YzgzZTUzOGE4OGE1Ig==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        MDhkMzM1OGE2ZTA1NDEwYTc5MDUxZjJkNDhhNDcyOGQ=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wNTYzNzM=
+      !binary "WC1SYWNrLUNhY2hl":
+      - !binary |-
+        bWlzcw==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA41QyW7DIBD9lYpzY4Gd1ad8RO9oDBMZlcUCXMeK/O8d3Fg5
+        5FJOzNPT2x7MaNayA8fjUZ+hu5316SJO4sLLE+yToQNjiaLRBZ9yBAXhaoOC
+        CbtKBVd1kVjapMHCLD04JHKOBizBhPkN+3piKiJk1BIygaLZcbHj+w/etAfe
+        8poIEfMYvRwg91IHsvebYlN5nFJCrzG+vN/58gds6fVgz88NbEJK+Q+1PA8l
+        rVpTU/37gIriEtSF0StMlfvOfmtf+owxoi9l2LK20yan4q1or9FR09ybJGm9
+        3LOW0ygRKWyJRccK25m14nVI0sMJ7N9ENS8j1TQSe2dMZhVdll+mIVGxyQEA
+        AA==
+    http_version: 
+  recorded_at: Fri, 04 Jan 2013 21:39:50 GMT
+recorded_with: VCR 2.3.0

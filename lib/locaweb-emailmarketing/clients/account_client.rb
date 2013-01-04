@@ -10,17 +10,28 @@ module Locaweb
       end
 
       def all
-        do_request "accounts"
+        http_get_request "accounts"
       end
 
       def get(id)
-        do_request "accounts/#{id}"
+        http_get_request "accounts/#{id}"
+      end
+
+      def update(id, attributes = {})
+        http_put_request "accounts/#{id}", account: attributes
       end
 
       private
 
-      def do_request uri
-        JSON RestClient.get "#{@options[:base_url]}/#{uri}", "X-Auth-Token" => @options[:auth_token], accept: :json
+      def http_get_request uri
+        JSON RestClient.get "#{@options[:base_url]}/#{uri}",
+                            { "X-Auth-Token" => @options[:auth_token], accept: :json }
+      end
+
+      def http_put_request uri, attributes
+        RestClient.put "#{@options[:base_url]}/#{uri}",
+                            attributes.to_json,
+                            { "X-Auth-Token" => @options[:auth_token], content_type: :json }
       end
     end
   end

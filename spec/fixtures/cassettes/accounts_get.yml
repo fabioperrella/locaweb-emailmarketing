@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50e66d8abf8d791719000001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - Nt5skc1xXsvKKSsyp3Bsx7ABNdJz9pc1uA9kyTdjnJkr
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbngvMS4xLjI=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAwNCBKYW4gMjAxMyAyMToxNTo1NCBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "RXRhZw==":
+      - !binary |-
+        IjE1OGIyNDA3Yzg4NjRhN2QxNDlkZjJhMzIxYjFhMjEyIg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        ZGFlOGFmYzM4MWUyNDFkODdjMmZlZGU2Y2MxZGE2MzQ=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMzA0NTI=
+      !binary "WC1SYWNrLUNhY2hl":
+      - !binary |-
+        bWlzcw==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA2WPS47DIBBErzJiPbHA+bPKIWaP2tAjI/GJoD1WFPnuaTyJ
+        sggr+lFUV92Fd0KLvcTDwZ1g+D2541kd1Vm2o8S3wAg+sMRhzKlSAQv5ErKF
+        GYfO5tgNhVXO12uAm0kQkcVUPATGzNKL/TyZLQiEzgAxVNuNVBu5+5JbvZda
+        9iwoSFNJ5go0Gpd5fXo5dgnnWjE5LO/Vn3LzB6HVuovnhcqEy7rZeartwXKX
+        KXIKGn013IxGoSUHLshO7Q8PKw43odV7MAU5BIT/+L1sBXouID4Vs19Nl+UB
+        nEMI22UBAAA=
+    http_version: 
+  recorded_at: Fri, 04 Jan 2013 21:15:55 GMT
+recorded_with: VCR 2.3.0
