@@ -10,13 +10,17 @@ module Locaweb
       end
 
       def all
-        response = RestClient.get "#{@options[:base_url]}/accounts", "X-Auth-Token" => @options[:auth_token], accept: :json
-        JSON response
+        do_request "accounts"
       end
 
       def get(id)
-        response = RestClient.get "#{@options[:base_url]}/accounts/#{id}", "X-Auth-Token" => @options[:auth_token], accept: :json
-        JSON response
+        do_request "accounts/#{id}"
+      end
+
+      private
+
+      def do_request uri
+        JSON RestClient.get "#{@options[:base_url]}/#{uri}", "X-Auth-Token" => @options[:auth_token], accept: :json
       end
     end
   end
