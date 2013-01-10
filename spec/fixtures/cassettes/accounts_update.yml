@@ -27,7 +27,7 @@ http_interactions:
       Server:
       - nginx/1.1.2
       Date:
-      - Thu, 10 Jan 2013 16:02:58 GMT
+      - Thu, 10 Jan 2013 17:12:18 GMT
       Connection:
       - keep-alive
       Status:
@@ -37,16 +37,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 6a54f24aa46477a37614c8ac4459cc18
+      - 2ff86903633c034fe5cd21ce48476d72
       X-Runtime:
-      - '0.089320'
+      - '0.028757'
       X-Rack-Cache:
       - invalidate, pass
     body:
       encoding: US-ASCII
       string: ''
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 16:02:58 GMT
+  recorded_at: Thu, 10 Jan 2013 17:12:19 GMT
 - request:
     method: get
     uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001
@@ -73,7 +73,7 @@ http_interactions:
         bmdpbngvMS4xLjI=
       !binary "RGF0ZQ==":
       - !binary |-
-        VGh1LCAxMCBKYW4gMjAxMyAxNjowMjo1OSBHTVQ=
+        VGh1LCAxMCBKYW4gMjAxMyAxNzoxMjoxOSBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -100,10 +100,10 @@ http_interactions:
         bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        MzE1ZGY3YmUzNDRkNzE3NzY4Mjg5YTI0Zjg2NWRhOTc=
+        MjRmYjRlNDJkMzY5NzZkZWY0OGMyMDZhMDEyN2FiZDI=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4xMTY2Mjk=
+        MC4wNjM4MTg=
       !binary "WC1SYWNrLUNhY2hl":
       - !binary |-
         bWlzcw==
@@ -120,5 +120,5 @@ http_interactions:
         syaJwUuoVqrxoiajJTKhWLVPcrnxeHmdLaGEgPifv9etQS8N1LtiC81U7/sf
         tjXNcmYBAAA=
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 16:02:59 GMT
+  recorded_at: Thu, 10 Jan 2013 17:12:19 GMT
 recorded_with: VCR 2.3.0

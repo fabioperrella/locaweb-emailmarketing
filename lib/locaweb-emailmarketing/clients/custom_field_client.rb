@@ -9,6 +9,10 @@ module Locaweb
       def all
         @http_request_adapter.get "accounts/#{@account_id}/custom_fields"
       end
+
+      def get(id)
+        @http_request_adapter.get "accounts/#{@account_id}/custom_fields/#{id}"
+      end
     end
   end
 end
