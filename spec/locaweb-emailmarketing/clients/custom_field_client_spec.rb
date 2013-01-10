@@ -8,6 +8,7 @@ describe Locaweb::Emailmarketing::CustomFieldClient do
   describe ".all" do
     it "returns all custom_fields" do
       VCR.use_cassette('custom_field_all') do
+        client.custom_fields.create(name: "Cidade", type: "string")
         client.custom_fields.all["items"].find{|c| c["name"] == "Cidade"}.should include("name"=>"Cidade", "type"=>"string")
       end
     end
@@ -25,6 +26,10 @@ describe Locaweb::Emailmarketing::CustomFieldClient do
   describe ".create" do
     it "creates a custom_field and return custom_field_id" do
       VCR.use_cassette('custom_field_create') do
+        custom_field_id = client.custom_fields.all["items"].find{|c| c["name"] == "codigo"}["id"]
+        if custom_field_id
+          client.custom_fields.destroy custom_field_id
+        end
         custom_field_id = client.custom_fields.create(name: "codigo", type: "number")
         client.custom_fields.get(custom_field_id).should include({"id"=>custom_field_id, "name"=>"codigo", "type"=>"number"})
       end
@@ -34,7 +39,18 @@ describe Locaweb::Emailmarketing::CustomFieldClient do
   describe ".update" do
     it "updates a custom_field" do
       VCR.use_cassette('custom_field_update') do
-        custom_field_id = client.custom_fields.all["items"].find{|c| c["name"] == "Cidade"}["id"]
+        custom_fields = client.custom_fields.all["items"]
+        if custom_field = custom_fields.find{|c| c["name"] == "city"}
+          client.custom_fields.destroy custom_field["id"]
+        end
+
+        custom_field = client.custom_fields.all["items"].find{|c| c["name"] == "Cidade"}
+        custom_field_id = if custom_field
+          custom_field["id"]
+        else
+          client.custom_fields.create(name: "Cidade", type: "string")
+        end
+
         client.custom_fields.update(custom_field_id, name: "city")
         client.custom_fields.get(custom_field_id)["name"].should == "city"
       end

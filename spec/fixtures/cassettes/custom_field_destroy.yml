@@ -5,7 +5,7 @@ http_interactions:
     uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/custom_fields
     body:
       encoding: US-ASCII
-      string: ! '{"name":"lalapopo","type":"number"}'
+      string: ! '{"custom_field":{"name":"lalapopo","type":"number"}}'
     headers:
       Accept:
       - ! '*/*; q=0.5, application/xml'
@@ -16,7 +16,7 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '35'
+      - '52'
       User-Agent:
       - Ruby
   response:
@@ -30,7 +30,7 @@ http_interactions:
         bmdpbngvMS4xLjI=
       !binary "RGF0ZQ==":
       - !binary |-
-        VGh1LCAxMCBKYW4gMjAxMyAxNzozNzoxOCBHTVQ=
+        VGh1LCAxMCBKYW4gMjAxMyAxOTozOTo0MiBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -51,16 +51,16 @@ http_interactions:
         SUU9RWRnZSxjaHJvbWU9MQ==
       !binary "RXRhZw==":
       - !binary |-
-        ImZlYzE1YWJkZWQ2OTQ0NTI5OTQwMjZjMTg0YzIxMWU0Ig==
+        IjdkM2Y0ZDcxY2E2YzZkODQ2Njg1YzZlZGQ1OWE4OTdkIg==
       !binary "Q2FjaGUtQ29udHJvbA==":
       - !binary |-
         bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        NGJiNGE0ZjVmMGU3ZmJjN2Y0Mjk2ZTI1ZmI2NWM0NDg=
+        ZjhiMTlhOTU2NGIwYzk2ZGM1NWMxNmY4MjU3NWViMWQ=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wMTUyMTE=
+        MC4wMTQ3NjY=
       !binary "WC1SYWNrLUNhY2hl":
       - !binary |-
         aW52YWxpZGF0ZSwgcGFzcw==
@@ -70,13 +70,13 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA6tWykxRslIyNUhNTUs2STW2SDS1MDJONk0zMDBKMTJXqgUA
-        bJmBQSEAAAA=
+        H4sIAAAAAAAAA6tWykxRslIyNUhNM7RISzU2SzVMsbS0MDA0MEhLNTRTqgUA
+        s5n5wiEAAAA=
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 17:37:18 GMT
+  recorded_at: Thu, 10 Jan 2013 19:39:42 GMT
 - request:
     method: delete
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/custom_fields/50eefc4e38a5823c5f002d27
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/custom_fields/50ef18fe36e1d9980100fe16
     body:
       encoding: US-ASCII
       string: ''
@@ -97,7 +97,7 @@ http_interactions:
       Server:
       - nginx/1.1.2
       Date:
-      - Thu, 10 Jan 2013 17:37:18 GMT
+      - Thu, 10 Jan 2013 19:39:42 GMT
       Connection:
       - keep-alive
       Status:
@@ -107,19 +107,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 84c9a1ae14bf6bed8e6b8aa8443dd55e
+      - 805cc026b7fb6d16ba8ea573eb0b4ed8
       X-Runtime:
-      - '0.014837'
+      - '0.011097'
       X-Rack-Cache:
       - invalidate, pass
     body:
       encoding: US-ASCII
       string: ''
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 17:37:18 GMT
+  recorded_at: Thu, 10 Jan 2013 19:39:43 GMT
 - request:
     method: get
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/custom_fields/50eefc4e38a5823c5f002d27
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/custom_fields/50ef18fe36e1d9980100fe16
     body:
       encoding: US-ASCII
       string: ''
@@ -143,7 +143,7 @@ http_interactions:
         bmdpbngvMS4xLjI=
       !binary "RGF0ZQ==":
       - !binary |-
-        VGh1LCAxMCBKYW4gMjAxMyAxNzozNzoxOCBHTVQ=
+        VGh1LCAxMCBKYW4gMjAxMyAxOTozOTo0MyBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -167,10 +167,10 @@ http_interactions:
         bm8tY2FjaGU=
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        OWQ0ZTU4YmI1OTA4OGQ1MjM3MWU5N2EzYTA1OTI3MzA=
+        NDEwMTM5ZGEyMjk1NzE2MWVmNDBhODFmY2RkZmRkNzU=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wMTgyMDk=
+        MC4wMzkwNTg=
       !binary "WC1SYWNrLUNhY2hl":
       - !binary |-
         bWlzcw==
@@ -183,5 +183,5 @@ http_interactions:
         H4sIAAAAAAAAA6tWSi0qyi9SslLyT8pKLclXyIspNTBINc5XSM1Lzs8rKUpM
         yVeqBQC/d9ipJgAAAA==
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 17:37:19 GMT
+  recorded_at: Thu, 10 Jan 2013 19:39:43 GMT
 recorded_with: VCR 2.3.0
