@@ -8,13 +8,13 @@ describe Locaweb::Emailmarketing::CustomFieldClient do
   describe ".all" do
     it "returns all accounts" do
       pending
-      # VCR.use_cassette('accounts_all') do
-      #   custom_field_client.all.should == { "items" =>
-      #     [
-      #       {"id"=> TRIAL_ACCOUNT_ID , "display_name"=>"trial", "plan_name"=>"Trial"}
-      #     ],
-      #     "page" => {"current"=>1, "total"=>1} }
-      # end
+      VCR.use_cassette('custom_field_all') do
+        custom_field_client.all.should == { "items" =>
+          [
+            {"id"=> TRIAL_ACCOUNT_ID , "display_name"=>"trial", "plan_name"=>"Trial"}
+          ],
+          "page" => {"current"=>1, "total"=>1} }
+      end
     end
   end
 end

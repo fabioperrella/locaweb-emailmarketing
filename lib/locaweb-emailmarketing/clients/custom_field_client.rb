@@ -1,5 +1,3 @@
-require 'rest_client'
-
 module Locaweb
   module Emailmarketing
     class CustomFieldClient
@@ -7,6 +5,9 @@ module Locaweb
 
       def initialize(options = {})
         validate_and_set_options options
+      end
+
+      def all
       end
     end
   end

@@ -1,38 +1,23 @@
-require 'rest_client'
-
 module Locaweb
   module Emailmarketing
     class AccountClient
       include ClientValidations
 
       def initialize(options = {})
-        validate_and_set_options options
+        @http_request_adapter = HttpRequestAdapter.new options
       end
 
       def all
-        http_get_request "accounts"
+        @http_request_adapter.get "accounts"
       end
 
       def get(id)
-        http_get_request "accounts/#{id}"
+        @http_request_adapter.get "accounts/#{id}"
       end
 
       def update(id, attributes = {})
         validate_attributes(attributes, optional: [:return_path_domain])
-        http_put_request "accounts/#{id}", account: attributes
-      end
-
-      private
-
-      def http_get_request uri
-        JSON RestClient.get "#{@options[:base_url]}/#{uri}",
-                            { "X-Auth-Token" => @options[:auth_token], accept: :json }
-      end
-
-      def http_put_request uri, attributes
-        RestClient.put "#{@options[:base_url]}/#{uri}",
-                            attributes.to_json,
-                            { "X-Auth-Token" => @options[:auth_token], content_type: :json }
+        @http_request_adapter.put "accounts/#{id}", account: attributes
       end
     end
   end
