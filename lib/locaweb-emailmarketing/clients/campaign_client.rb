@@ -23,7 +23,7 @@ module Locaweb
 
       def update(id, attributes)
         attributes.assert_required_keys(required: [:name], optional: [:description])
-        @http_request_adapter.put "accounts/#{@account_id}/#{@resource_name}/#{id}", attributes
+        @http_request_adapter.put "accounts/#{@account_id}/#{@resource_name}/#{id}", {campaign: attributes}
       end
 
       def destroy(id)

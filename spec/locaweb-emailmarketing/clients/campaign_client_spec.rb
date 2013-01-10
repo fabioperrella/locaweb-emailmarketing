@@ -38,18 +38,17 @@ describe Locaweb::Emailmarketing::CampaignClient do
   describe ".update" do
     it "updates a campaign" do
       VCR.use_cassette('campaign_update') do
-        campaign_id = client.campaigns.create(name: "camp 5", description: "desc camp 1")
-        client.campaigns.update(campaign_id, name: "camp 55")
-        client.campaigns.get(campaign_id)["name"].should == "camp 55"
+        campaign_id = client.campaigns.create(name: "camp 7", description: "desc camp 1")
+        client.campaigns.update(campaign_id, name: "camp 77")
+        client.campaigns.get(campaign_id)["name"].should == "camp 77"
       end
     end
   end
 
   describe ".destroy" do
     it "destroys a campaign" do
-    pending
       VCR.use_cassette('campaign_destroy') do
-        campaign_id = client.campaigns.create(name: "lalapopo", type: "number")
+        campaign_id = client.campaigns.create(name: "camp 6", description: "desc camp 1")
         client.campaigns.destroy(campaign_id)
         client.campaigns.get(campaign_id).should be_nil
       end
