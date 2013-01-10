@@ -5,6 +5,8 @@ require 'vcr'
 require 'webmock'
 
 AUTH_TOKEN = 'Nt5skc1xXsvKKSsyp3Bsx7ABNdJz9pc1uA9kyTdjnJkr'
+BASE_URL = 'https://emailmarketing.locaweb.com.br/api/v1'
+TRIAL_ACCOUNT_ID = "50e66d8abf8d791719000001"
 
 VCR.configure do |conf|
   conf.default_cassette_options = { :match_requests_on => [:uri, :method, :body, :headers] }
