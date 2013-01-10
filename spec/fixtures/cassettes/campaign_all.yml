@@ -1,0 +1,150 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/campaigns
+    body:
+      encoding: US-ASCII
+      string: ! '{"campaign":{"name":"camp 2"}}'
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - Nt5skc1xXsvKKSsyp3Bsx7ABNdJz9pc1uA9kyTdjnJkr
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '30'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbngvMS4xLjI=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VGh1LCAxMCBKYW4gMjAxMyAxOTo0MjoxOCBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "RXRhZw==":
+      - !binary |-
+        IjdmNjhlN2IwNGFmYjRhNjQ1ZjQzMDU4MzEyN2QyZDI2Ig==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        YTIwM2M1YzQyNGJlNDQ2NGJiNWJiNjIzYjZmZjM5OWY=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMjQ4MDc=
+      !binary "WC1SYWNrLUNhY2hl":
+      - !binary |-
+        aW52YWxpZGF0ZSwgcGFzcw==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6tWykxRslIyNUhNM7S0TDQ2SzVMsUyxMDEyMDQxMTVSqgUA
+        ONBx5SEAAAA=
+    http_version: 
+  recorded_at: Thu, 10 Jan 2013 19:42:18 GMT
+- request:
+    method: get
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/campaigns
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - Nt5skc1xXsvKKSsyp3Bsx7ABNdJz9pc1uA9kyTdjnJkr
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbngvMS4xLjI=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VGh1LCAxMCBKYW4gMjAxMyAxOTo0MjoxOCBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "RXRhZw==":
+      - !binary |-
+        ImRiMGUwY2EzZjYzYzkwNWQ5OWVmOGY2OGYxZmM1Y2NkIg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        NTc0MzZiYjRiNGViNzNhMzlkMWRlZjUwM2Y4ODlkNGU=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMzU1MDg=
+      !binary "WC1SYWNrLUNhY2hl":
+      - !binary |-
+        bWlzcw==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA1XOzw6CMAwG8FdZeuawjk3+PINnL+qh24piZBDEE+HdbdQE
+        uLXp90u/GdqJuxfU5xnaCDU4zQ1WFeUHxljF0hqN1joDGSTqWBKBukEZWLKt
+        KI37CeOsF+HQ7gWlOyncKWYM9v8naNJI3vlVnXi8vLXmvFfSId/T4GOzqajZ
+        o1spJVKhTVO/R74im5fkpGwooka0h2ZFR0rff4WsQlUkdewfBMs1g4FuEpkh
+        vMdRjlBjBlM/0VOmZfkAki46t0UBAAA=
+    http_version: 
+  recorded_at: Thu, 10 Jan 2013 19:42:18 GMT
+recorded_with: VCR 2.3.0

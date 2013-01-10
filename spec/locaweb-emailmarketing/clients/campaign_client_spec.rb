@@ -7,9 +7,9 @@ describe Locaweb::Emailmarketing::CampaignClient do
 
   describe ".all" do
     it "returns all campaigns" do
-      pending
       VCR.use_cassette('campaign_all') do
-        client.campaigns.all["items"].find{|c| c["name"] == "Cidade"}.should include("name"=>"Cidade", "type"=>"string")
+        client.campaigns.create(name: "camp 2")
+        client.campaigns.all["items"].find{|c| c["name"] == "camp 2"}.should include("name"=>"camp 2")
       end
     end
   end
