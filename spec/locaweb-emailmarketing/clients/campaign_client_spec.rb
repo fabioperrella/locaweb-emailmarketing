@@ -37,11 +37,10 @@ describe Locaweb::Emailmarketing::CampaignClient do
 
   describe ".update" do
     it "updates a campaign" do
-    pending
       VCR.use_cassette('campaign_update') do
-        campaign_id = client.campaigns.all["items"].find{|c| c["name"] == "Cidade"}["id"]
-        client.campaigns.update(campaign_id, name: "city")
-        client.campaigns.get(campaign_id)["name"].should == "city"
+        campaign_id = client.campaigns.create(name: "camp 5", description: "desc camp 1")
+        client.campaigns.update(campaign_id, name: "camp 55")
+        client.campaigns.get(campaign_id)["name"].should == "camp 55"
       end
     end
   end

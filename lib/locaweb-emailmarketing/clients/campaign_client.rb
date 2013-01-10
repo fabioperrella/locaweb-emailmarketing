@@ -21,10 +21,10 @@ module Locaweb
         response_json["id"]
       end
 
-      # def update(id, attributes)
-      #   attributes.assert_required_keys(required: [:name])
-      #   @http_request_adapter.put "accounts/#{@account_id}/#{@resource_name}/#{id}", attributes
-      # end
+      def update(id, attributes)
+        attributes.assert_required_keys(required: [:name], optional: [:description])
+        @http_request_adapter.put "accounts/#{@account_id}/#{@resource_name}/#{id}", attributes
+      end
 
       def destroy(id)
         @http_request_adapter.delete "accounts/#{@account_id}/#{@resource_name}/#{id}"
