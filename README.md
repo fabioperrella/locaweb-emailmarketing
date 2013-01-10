@@ -23,3 +23,12 @@ Custom Fields:
 - update: client.custom_fields.update("ID", options)
   available options: name
 - destroy: client.custom_fields.destroy("ID")
+
+Campaigns:
+- list: client.campaigns.all
+- get: client.campaigns.get("ID")
+- create: client.campaigns.create(options)
+  available options: name, description
+- update: client.campaigns.update("ID", options)
+  available options: name, description
+- destroy: client.campaigns.destroy("ID")
