@@ -18,6 +18,12 @@ module Locaweb
                             attributes.to_json,
                             { "X-Auth-Token" => @options[:auth_token], content_type: :json }
       end
+
+      def post uri, attributes
+        RestClient.post "#{@options[:base_url]}/#{uri}",
+                            attributes.to_json,
+                            { "X-Auth-Token" => @options[:auth_token], content_type: :json }
+      end
     end
   end
 end

@@ -13,6 +13,12 @@ module Locaweb
       def get(id)
         @http_request_adapter.get "accounts/#{@account_id}/custom_fields/#{id}"
       end
+
+      def create(attributes)
+        attributes.assert_required_keys(required: [:name, :type])
+        response_json = JSON @http_request_adapter.post "accounts/#{@account_id}/custom_fields", attributes
+        response_json["id"]
+      end
     end
   end
 end

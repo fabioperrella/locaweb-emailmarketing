@@ -21,4 +21,13 @@ describe Locaweb::Emailmarketing::CustomFieldClient do
       end
     end
   end
+
+  describe ".create" do
+    it "returns a custom_field" do
+      VCR.use_cassette('custom_field_create') do
+        custom_field_id = client.custom_fields.create(name: "codigo", type: "number")
+        client.custom_fields.get(custom_field_id).should include({"id"=>custom_field_id, "name"=>"codigo", "type"=>"number"})
+      end
+    end
+  end
 end

@@ -38,4 +38,12 @@ describe Locaweb::Emailmarketing::HttpRequestAdapter do
       subject.put "aaa", attributes
     end
   end
+
+  describe ".post" do
+    it "calls restclient POST with correct options" do
+      attributes = {aa: 1}
+      RestClient.should_receive(:post).with("#{BASE_URL}/aaa", attributes.to_json, "X-Auth-Token" => AUTH_TOKEN, content_type: :json).and_return "{}"
+      subject.post "aaa", attributes
+    end
+  end
 end
