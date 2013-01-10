@@ -4,7 +4,7 @@ module Locaweb
   module Emailmarketing
     class HttpRequestAdapter
       def initialize(options)
-        #TODO: validate options
+        options.assert_valid_keys(:auth_token, :base_url)
         @options = options
       end
 

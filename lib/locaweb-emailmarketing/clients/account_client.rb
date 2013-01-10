@@ -3,8 +3,8 @@ module Locaweb
     class AccountClient
       include ClientValidations
 
-      def initialize(options = {})
-        @http_request_adapter = HttpRequestAdapter.new options
+      def initialize(http_request_adapter)
+        @http_request_adapter = http_request_adapter
       end
 
       def all

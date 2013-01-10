@@ -4,7 +4,6 @@ module Locaweb
       include ClientValidations
 
       def initialize(options = {})
-        validate_and_set_options options
       end
 
       def all
