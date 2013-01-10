@@ -3,7 +3,7 @@ require 'rest_client'
 module Locaweb
   module Emailmarketing
     class AccountClient
-      include Configuration
+      include ClientValidations
 
       def initialize(options = {})
         validate_and_set_options options
@@ -18,6 +18,7 @@ module Locaweb
       end
 
       def update(id, attributes = {})
+        validate_attributes(attributes, optional: [:return_path_domain])
         http_put_request "accounts/#{id}", account: attributes
       end
 

@@ -1,7 +1,7 @@
 module Locaweb
   module Emailmarketing
     class Client
-      include Configuration
+      include ClientValidations
 
       def initialize(options = {})
         validate_and_set_options options

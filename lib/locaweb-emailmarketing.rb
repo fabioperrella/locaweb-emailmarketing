@@ -1,6 +1,6 @@
 require 'json'
 require 'active_support/core_ext'
-require "locaweb-emailmarketing/configuration"
+require "locaweb-emailmarketing/client_validations"
 require "locaweb-emailmarketing/version"
 require "locaweb-emailmarketing/clients"
 
