@@ -1,0 +1,1 @@
+require "locaweb-emailmarketing/lib/hash"

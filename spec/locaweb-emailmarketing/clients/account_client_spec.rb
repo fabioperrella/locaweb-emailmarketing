@@ -2,7 +2,7 @@ require 'spec_helper'
 include Locaweb::Emailmarketing
 
 describe Locaweb::Emailmarketing::AccountClient do
-  let(:client) { Client.new auth_token: AUTH_TOKEN, base_url: BASE_URL }
+  let(:client) { Client.new auth_token: AUTH_TOKEN, base_url: BASE_URL, account_id: TRIAL_ACCOUNT_ID }
 
   describe ".all" do
     it "returns all accounts" do

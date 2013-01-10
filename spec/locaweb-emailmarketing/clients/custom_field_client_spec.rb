@@ -3,17 +3,12 @@ require "spec_helper"
 include Locaweb::Emailmarketing
 
 describe Locaweb::Emailmarketing::CustomFieldClient do
-  let(:custom_field_client) { CustomFieldClient.new auth_token: AUTH_TOKEN, base_url: BASE_URL }
+  let(:client) { Client.new auth_token: AUTH_TOKEN, base_url: BASE_URL, account_id: TRIAL_ACCOUNT_ID }
 
   describe ".all" do
-    it "returns all accounts" do
-      pending
+    it "returns all custom_fields" do
       VCR.use_cassette('custom_field_all') do
-        custom_field_client.all.should == { "items" =>
-          [
-            {"id"=> TRIAL_ACCOUNT_ID , "display_name"=>"trial", "plan_name"=>"Trial"}
-          ],
-          "page" => {"current"=>1, "total"=>1} }
+        client.custom_fields.all["items"].find{|c| c["name"] == "Cidade"}.should include("name"=>"Cidade", "type"=>"string")
       end
     end
   end
