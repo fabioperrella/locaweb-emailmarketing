@@ -29,6 +29,13 @@ describe Locaweb::Emailmarketing::HttpRequestAdapter do
       RestClient.stub(:get).and_return %q|{"aaaa":"123"}|
       subject.get("aaa").should == {"aaaa" => "123"}
     end
+
+    context "when not found" do
+      it "returns nil" do
+        RestClient.stub(:get).and_raise RestClient::ResourceNotFound.new
+        subject.get("aaa").should be_nil
+      end
+    end
   end
 
   describe ".put" do
@@ -44,6 +51,13 @@ describe Locaweb::Emailmarketing::HttpRequestAdapter do
       attributes = {aa: 1}
       RestClient.should_receive(:post).with("#{BASE_URL}/aaa", attributes.to_json, "X-Auth-Token" => AUTH_TOKEN, content_type: :json).and_return "{}"
       subject.post "aaa", attributes
+    end
+  end
+
+  describe ".delete" do
+    it "calls restclient DELETE with correct options" do
+      RestClient.should_receive(:delete).with("#{BASE_URL}/aaa", "X-Auth-Token" => AUTH_TOKEN, accept: :json).and_return "{}"
+      subject.delete "aaa"
     end
   end
 end

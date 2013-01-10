@@ -24,6 +24,10 @@ module Locaweb
         attributes.assert_required_keys(required: [:name])
         @http_request_adapter.put "accounts/#{@account_id}/custom_fields/#{id}", attributes
       end
+
+      def destroy(id)
+        @http_request_adapter.delete "accounts/#{@account_id}/custom_fields/#{id}"
+      end
     end
   end
 end

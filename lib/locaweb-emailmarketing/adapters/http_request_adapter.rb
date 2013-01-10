@@ -9,8 +9,12 @@ module Locaweb
       end
 
       def get uri
-        JSON RestClient.get "#{@options[:base_url]}/#{uri}",
+        begin
+          JSON RestClient.get "#{@options[:base_url]}/#{uri}",
                             { "X-Auth-Token" => @options[:auth_token], accept: :json }
+        rescue RestClient::ResourceNotFound
+          nil
+        end
       end
 
       def put uri, attributes
@@ -23,6 +27,11 @@ module Locaweb
         RestClient.post "#{@options[:base_url]}/#{uri}",
                             attributes.to_json,
                             { "X-Auth-Token" => @options[:auth_token], content_type: :json }
+      end
+
+      def delete uri
+        RestClient.delete "#{@options[:base_url]}/#{uri}",
+                            { "X-Auth-Token" => @options[:auth_token], accept: :json }
       end
     end
   end
