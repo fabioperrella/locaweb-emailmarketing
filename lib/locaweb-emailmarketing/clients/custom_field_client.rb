@@ -19,6 +19,11 @@ module Locaweb
         response_json = JSON @http_request_adapter.post "accounts/#{@account_id}/custom_fields", attributes
         response_json["id"]
       end
+
+      def update(id, attributes)
+        attributes.assert_required_keys(required: [:name])
+        @http_request_adapter.put "accounts/#{@account_id}/custom_fields/#{id}", attributes
+      end
     end
   end
 end

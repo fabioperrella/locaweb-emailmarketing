@@ -30,4 +30,14 @@ describe Locaweb::Emailmarketing::CustomFieldClient do
       end
     end
   end
+
+  describe ".update" do
+    it "returns a custom_field" do
+      VCR.use_cassette('custom_field_update') do
+        custom_field_id = client.custom_fields.all["items"].find{|c| c["name"] == "Cidade"}["id"]
+        client.custom_fields.update(custom_field_id, name: "city")
+        client.custom_fields.get(custom_field_id)["name"].should == "city"
+      end
+    end
+  end
 end
