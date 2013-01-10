@@ -16,10 +16,9 @@ describe Locaweb::Emailmarketing::CampaignClient do
 
   describe ".get" do
     it "returns a campaign" do
-      pending
       VCR.use_cassette('campaign_get') do
-        campaign_id = client.campaigns.all["items"].find{|c| c["name"] == "Cidade"}["id"]
-        client.campaigns.get(campaign_id).should include("name"=>"Cidade", "type"=>"string")
+        campaign_id = client.campaigns.create(name: "camp 3")
+        client.campaigns.get(campaign_id).should include("name"=>"camp 3")
       end
     end
   end
