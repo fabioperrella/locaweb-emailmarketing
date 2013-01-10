@@ -1,8 +1,6 @@
 module Locaweb
   module Emailmarketing
     class Client
-      include ClientValidations
-
       def initialize(options = {})
         options.assert_required_keys(required: [:account_id, :auth_token, :base_url])
         @account_id = options[:account_id]

@@ -1,8 +1,6 @@
 module Locaweb
   module Emailmarketing
     class AccountClient
-      include ClientValidations
-
       def initialize(http_request_adapter)
         @http_request_adapter = http_request_adapter
       end
@@ -16,7 +14,7 @@ module Locaweb
       end
 
       def update(id, attributes = {})
-        validate_attributes(attributes, optional: [:return_path_domain])
+        attributes.assert_required_keys(optional: [:return_path_domain])
         @http_request_adapter.put "accounts/#{id}", account: attributes
       end
     end

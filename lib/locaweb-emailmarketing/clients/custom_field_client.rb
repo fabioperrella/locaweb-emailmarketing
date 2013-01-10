@@ -1,8 +1,6 @@
 module Locaweb
   module Emailmarketing
     class CustomFieldClient
-      include ClientValidations
-
       def initialize(http_request_adapter, account_id)
         @http_request_adapter = http_request_adapter
         @account_id = account_id
