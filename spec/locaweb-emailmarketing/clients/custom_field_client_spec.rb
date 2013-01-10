@@ -16,7 +16,8 @@ describe Locaweb::Emailmarketing::CustomFieldClient do
   describe ".get" do
     it "returns a custom_field" do
       VCR.use_cassette('custom_field_get') do
-        client.custom_fields.get("50ee568c2234cb116d000004").should include("name"=>"Cidade", "type"=>"string")
+        custom_field_id = client.custom_fields.all["items"].find{|c| c["name"] == "Cidade"}["id"]
+        client.custom_fields.get(custom_field_id).should include("name"=>"Cidade", "type"=>"string")
       end
     end
   end

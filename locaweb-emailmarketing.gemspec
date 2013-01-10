@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec"
   s.add_development_dependency "pry"
   s.add_development_dependency "pry-debugger"
-  s.add_development_dependency "webmock"
+  s.add_development_dependency "webmock", "~> 1.8.11"
   s.add_development_dependency "vcr"
   s.add_runtime_dependency "activesupport"
   s.add_runtime_dependency "rest-client"
