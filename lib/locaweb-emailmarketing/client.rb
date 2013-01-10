@@ -16,6 +16,10 @@ module Locaweb
         @custom_fields ||= CustomFieldClient.new @http_request_adapter, @account_id
       end
 
+      def campaigns
+        @campaigns ||= CampaignClient.new @http_request_adapter, @account_id
+      end
+
     end
   end
 end
