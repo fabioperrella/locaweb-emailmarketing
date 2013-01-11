@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/campaigns
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001/campaigns
     body:
       encoding: US-ASCII
       string: ! '{"campaign":{"name":"camp 6","description":"desc camp 1"}}'
@@ -30,7 +30,7 @@ http_interactions:
         bmdpbngvMS4xLjI=
       !binary "RGF0ZQ==":
       - !binary |-
-        VGh1LCAxMCBKYW4gMjAxMyAxOTo0NjozOCBHTVQ=
+        RnJpLCAxMSBKYW4gMjAxMyAxOTo0NzowMyBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -51,16 +51,16 @@ http_interactions:
         SUU9RWRnZSxjaHJvbWU9MQ==
       !binary "RXRhZw==":
       - !binary |-
-        IjQ0NjIyYzJmNzcwMjliNGRjNzc4YTU0MGY1YzI0YmZkIg==
+        IjNkNjAwMDVjYjg3MGVmOWY2MmU2Y2JjOTMwOGZjYTgxIg==
       !binary "Q2FjaGUtQ29udHJvbA==":
       - !binary |-
         bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        ZjAzYjNjNzEyNzZlNGIwMDFjODhmNTYzMDQwNjU4Mzk=
+        MmUxMjU4OGZhOGEzZjFjODI2MDJhM2Q1MTU2NTQ3NDc=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wMzI5ODY=
+        MC4wMTYwMzE=
       !binary "WC1SYWNrLUNhY2hl":
       - !binary |-
         aW52YWxpZGF0ZSwgcGFzcw==
@@ -70,13 +70,13 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA6tWykxRslIyNUhNM0y0TDU2SzVMsbS0MDAEQgMDU6VaAI1O
-        3FghAAAA
+        H4sIAAAAAAAAA6tWykxRslIyNUgzMEs2Nje2SDS1MDJONk0zMDSwSDFTqgUA
+        hUjz1yEAAAA=
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 19:46:38 GMT
+  recorded_at: Fri, 11 Jan 2013 19:47:04 GMT
 - request:
     method: delete
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/campaigns/50ef1a9e36e1d99801010005
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001/campaigns/50f06c3738a5823c5f0108d6
     body:
       encoding: US-ASCII
       string: ''
@@ -97,7 +97,7 @@ http_interactions:
       Server:
       - nginx/1.1.2
       Date:
-      - Thu, 10 Jan 2013 19:46:38 GMT
+      - Fri, 11 Jan 2013 19:47:04 GMT
       Connection:
       - keep-alive
       Status:
@@ -107,19 +107,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - d605e9fba0e440bb7bbaf3a9caef4f3a
+      - 59c4d05444fb73687026ad49684344fe
       X-Runtime:
-      - '0.018512'
+      - '0.014544'
       X-Rack-Cache:
       - invalidate, pass
     body:
       encoding: US-ASCII
       string: ''
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 19:46:38 GMT
+  recorded_at: Fri, 11 Jan 2013 19:47:04 GMT
 - request:
     method: get
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/campaigns/50ef1a9e36e1d99801010005
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001/campaigns/50f06c3738a5823c5f0108d6
     body:
       encoding: US-ASCII
       string: ''
@@ -143,7 +143,7 @@ http_interactions:
         bmdpbngvMS4xLjI=
       !binary "RGF0ZQ==":
       - !binary |-
-        VGh1LCAxMCBKYW4gMjAxMyAxOTo0NjozOSBHTVQ=
+        RnJpLCAxMSBKYW4gMjAxMyAxOTo0NzowNCBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -167,10 +167,10 @@ http_interactions:
         bm8tY2FjaGU=
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        MWNhNDgxMGQzZDczZGM5MDAzY2MwN2M2ZGY4MTZjMzI=
+        ZDhiMGFjODAwOTIyYjIxMmIwYWYyZmNhNjdlNTMyMWI=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wMjI4MjY=
+        MC4wMTkzMjY=
       !binary "WC1SYWNrLUNhY2hl":
       - !binary |-
         bWlzcw==
@@ -183,5 +183,5 @@ http_interactions:
         H4sIAAAAAAAAA6tWSi0qyi9SslLyT8pKLclXyIspNTBINc5XSM1Lzs8rKUpM
         yVeqBQC/d9ipJgAAAA==
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 19:46:39 GMT
+  recorded_at: Fri, 11 Jan 2013 19:47:04 GMT
 recorded_with: VCR 2.3.0

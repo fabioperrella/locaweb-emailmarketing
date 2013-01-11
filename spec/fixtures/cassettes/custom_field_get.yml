@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/custom_fields
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001/custom_fields
     body:
       encoding: US-ASCII
       string: ''
@@ -26,7 +26,7 @@ http_interactions:
         bmdpbngvMS4xLjI=
       !binary "RGF0ZQ==":
       - !binary |-
-        VGh1LCAxMCBKYW4gMjAxMyAxOTozOTo0MCBHTVQ=
+        RnJpLCAxMSBKYW4gMjAxMyAxOTo0ODo0NyBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -47,16 +47,16 @@ http_interactions:
         SUU9RWRnZSxjaHJvbWU9MQ==
       !binary "RXRhZw==":
       - !binary |-
-        IjVjMzQzMTRjMjEwYzEyMzVmZDhkOTU1NWZjYjI4MmVjIg==
+        IjM1NWY1YmMxYjk2YzI5Y2U2NTVkMWJiZDAwZWMyYjljIg==
       !binary "Q2FjaGUtQ29udHJvbA==":
       - !binary |-
         bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        ODQ2YjBiNWM5NGNiODFlYTFiYmI1ODZlY2M5MDdkNTQ=
+        NDg4MWNiMDhhNjQwMDg0OTU0NDhmNjIwNzViNDY0MWY=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4xNzE5Nzc=
+        MC4wMTA0NzQ=
       !binary "WC1SYWNrLUNhY2hl":
       - !binary |-
         bWlzcw==
@@ -66,18 +66,16 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA4XQS26DMBAG4KtEXrPw+EEM23adC1RdDPYYWSoQgRM1Qty9
-        RonEo1Xxyrb8f56ZkYVIzcDKj5EFx0qmOXkwvpI5gSuc5ciBfJ6zjLXYUHrx
-        Fhw6Suf4uM7nIfahrdmUbQTkW4FXi2BDfBzlC//KGyU4KKnEKt+5UHeL0N6a
-        ivqdoKGQBrUR0mrPufIAi3DF78M4POPanh0HI3BVgMOIJ7pTG1dVpEvaI1w9
-        EXSQpqCEWSGXrqHTpQt3PJiF8q9OzjaJQNLQTmmT0v2rkM6NFUIqWwHkjs9L
-        L8r73JBLEA42NAd9/WXJbUW/a/nM0tDrdDMye+v79AUrIb3qIn6l3TT9AFbZ
-        O/yKAgAA
+        H4sIAAAAAAAAA5WQMQ+CQAyF/4rpzFA4D+9YdTbu6lBoj1wiYLhzMIT/7jnB
+        YDR26mtev7x2Ah+lC1CdJ/AMFWh0WDZWlCFtClZFiVgocpBBT50kx94zsSQd
+        n/e3DnH0fQtztiIoTqul5GytwRxzY7VaCKdxcD6EywNR1PCNJI4MUu0M7yxp
+        XeO79EI6UKQNy6an0PhO+riiMUX5ydourMbH599ZVlcdh+7DV64Z3KlNkwma
+        xzimiFDlyTVEuqVunl/I7jEoggEAAA==
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 19:39:40 GMT
+  recorded_at: Fri, 11 Jan 2013 19:48:47 GMT
 - request:
     method: get
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/custom_fields/50ef18fb36e1d9dc0a01ef66
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001/custom_fields/50f06c9e38a582d3260023af
     body:
       encoding: US-ASCII
       string: ''
@@ -101,7 +99,7 @@ http_interactions:
         bmdpbngvMS4xLjI=
       !binary "RGF0ZQ==":
       - !binary |-
-        VGh1LCAxMCBKYW4gMjAxMyAxOTozOTo0MCBHTVQ=
+        RnJpLCAxMSBKYW4gMjAxMyAxOTo0ODo0NyBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -122,16 +120,16 @@ http_interactions:
         SUU9RWRnZSxjaHJvbWU9MQ==
       !binary "RXRhZw==":
       - !binary |-
-        IjI1MjhlOWE0NmM1YjMxMDdkODgyNmZiOTNjNmQ2MjBiIg==
+        IjlmMGJiYjViOTg1MDNiMWNjNGFiZmRmMzdjZWUwYzExIg==
       !binary "Q2FjaGUtQ29udHJvbA==":
       - !binary |-
         bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        ZDQwM2U3NjNiNDQzZWRlN2EzNmRhODA4ZDg3YjhmMTc=
+        MzU0Zjg5YjllYjJkZDlkN2M3OWFlNTM2NjUxZmVlNzM=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wMDk0NTE=
+        MC4wMDg0ODk=
       !binary "WC1SYWNrLUNhY2hl":
       - !binary |-
         bWlzcw==
@@ -141,9 +139,9 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA33KSwqAMAxF0a1IxhYSivUzdSESTSodKKJ1IOLejRsQ3uQ8
-        7g1JoIMKNVITRx+UpJUJGUljCFDCyota0SdhUXO+ts9H3tM6m6ddOasMnO0l
-        75AcYUF151ubBecmf8HzAvWCTYODAAAA
+        H4sIAAAAAAAAA6tWykxRslIyNUgzMEu2TDW2SDS1MEoxNjIzMDAyTkxT0lHK
+        S8xNBapwzkxJTEkF8ksqC0D84pKizLx0ID+5KDWxJDUlPrEEKGporGtgqGto
+        qGBobmViYWViBlRQWpCCT0EtAHSkrrqDAAAA
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 19:39:40 GMT
+  recorded_at: Fri, 11 Jan 2013 19:48:47 GMT
 recorded_with: VCR 2.3.0

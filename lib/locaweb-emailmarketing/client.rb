@@ -20,6 +20,9 @@ module Locaweb
         @campaigns ||= CampaignClient.new @http_request_adapter, @account_id
       end
 
+      def contact_imports
+        @contact_imports ||= ContactImportClient.new @http_request_adapter, @account_id
+      end
     end
   end
 end

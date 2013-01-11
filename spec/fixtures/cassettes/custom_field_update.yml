@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/custom_fields
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001/custom_fields
     body:
       encoding: US-ASCII
       string: ''
@@ -26,7 +26,7 @@ http_interactions:
         bmdpbngvMS4xLjI=
       !binary "RGF0ZQ==":
       - !binary |-
-        VGh1LCAxMCBKYW4gMjAxMyAxOTozOTo0MSBHTVQ=
+        RnJpLCAxMSBKYW4gMjAxMyAxOTo0ODo0OCBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -47,16 +47,16 @@ http_interactions:
         SUU9RWRnZSxjaHJvbWU9MQ==
       !binary "RXRhZw==":
       - !binary |-
-        ImI0YmU5YTFkYTQ2ZmI2YTdiMzliZjY1YmJiZGUwNDAxIg==
+        ImFiNzQwNzM4ZWU5M2ZhYTNjNzYwZmY5ZTM0ODRjOTQ4Ig==
       !binary "Q2FjaGUtQ29udHJvbA==":
       - !binary |-
         bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        NWY0MDc0M2FlYWEyYzM4NGZkZWVkMTdhMzJhOWMwMTE=
+        YmZmMmI5ZmUyMzQxNDM3MGU0YmU2NDc5M2M3MzlmNmE=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wMTA3Nzc=
+        MC4wMTM4NzE=
       !binary "WC1SYWNrLUNhY2hl":
       - !binary |-
         bWlzcw==
@@ -66,18 +66,17 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA4XQS26DMBAG4KtEXmfh8YMYts06F6i6GOwBWSo4AidqhLh7
-        jajEo1Xxyh55Ps/vgflITc+K94F5xwqmOVVgKiczApcLrUoOKuM5O7MWG0o3
-        bHC+DukcX/fp3D6akjo2nrdCOQvOcuRAVZYtwpt36GgR+tj5tt4LyLcCL1cz
-        +Pg66NeQS4PaCGl1xbmqAJb+O34dBNAAc7u2F8fBCBRLu8OIJ3pSG1f/kIq0
-        R7iaEXSQMihhVsgtNHS6Bf/EgySq+klysUkEkoZ2SpuU8K9COjNWCKlsCZA5
-        Pi29KNcpkEsQ9tY3B7n+suR2ot+zfJzTp9epMjD76Lr0BCsg3QoRP9NuHL8B
-        kz4le4oCAAA=
+        H4sIAAAAAAAAA5XQsW7EIAwA0F85ec5AQslB1t5cdW87ONhESA2cgAynKP9e
+        Th2Sk6pWZbIt82R7BV94zjC8reAJBlDCid4aJzUq3Sl7JtFJ1VtoIODMtcNG
+        8lOsebld73lY5pETbM2jwN8Cya4XlUC3C8+ekHgXckk+TI+CpPq155aM0aIV
+        rTZK7sJris7n/L4IwTL+JrFDLXB0ms4GlRrF/aldumDBE/EpYLZ+5lAOGmHh
+        P62nw2V8uf17lsNWL3H+4SofDVxxqpUV7JJSHRGGtnbFgp812rYvI1xEA8QB
+        AAA=
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 19:39:41 GMT
+  recorded_at: Fri, 11 Jan 2013 19:48:48 GMT
 - request:
     method: delete
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/custom_fields/50ef18a036e1d9dc0a01ef0b
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001/custom_fields/50efa80abf8d79a55b000004
     body:
       encoding: US-ASCII
       string: ''
@@ -98,7 +97,7 @@ http_interactions:
       Server:
       - nginx/1.1.2
       Date:
-      - Thu, 10 Jan 2013 19:39:41 GMT
+      - Fri, 11 Jan 2013 19:48:48 GMT
       Connection:
       - keep-alive
       Status:
@@ -108,19 +107,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 6700303613732b1066b46e5d4e516b36
+      - 0ca6dae2c18168764d3582429d89fa57
       X-Runtime:
-      - '0.018708'
+      - '0.008402'
       X-Rack-Cache:
       - invalidate, pass
     body:
       encoding: US-ASCII
       string: ''
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 19:39:42 GMT
+  recorded_at: Fri, 11 Jan 2013 19:48:48 GMT
 - request:
     method: get
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/custom_fields
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001/custom_fields
     body:
       encoding: US-ASCII
       string: ''
@@ -144,7 +143,7 @@ http_interactions:
         bmdpbngvMS4xLjI=
       !binary "RGF0ZQ==":
       - !binary |-
-        VGh1LCAxMCBKYW4gMjAxMyAxOTozOTo0MiBHTVQ=
+        RnJpLCAxMSBKYW4gMjAxMyAxOTo0ODo0OCBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -165,16 +164,16 @@ http_interactions:
         SUU9RWRnZSxjaHJvbWU9MQ==
       !binary "RXRhZw==":
       - !binary |-
-        IjdiNWQwZmUyZjhhNmJmNTY5MGQyNjYxNDdlN2UxODcwIg==
+        IjFhNDBhNTNhNmUyMjc2MThiNzE4YjMxMjU5MmZmMWZhIg==
       !binary "Q2FjaGUtQ29udHJvbA==":
       - !binary |-
         bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        ODI5MjVhZmQ0YzJjZDMxM2RhNGM3ZTFmYzQwMDBkYmM=
+        YjkzZGY2ZmM4YTU0NDBmYTY4Y2M5ZWJjZDExMmVlMjI=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wMTIxNTA=
+        MC4wMDkwMjc=
       !binary "WC1SYWNrLUNhY2hl":
       - !binary |-
         bWlzcw==
@@ -184,17 +183,16 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA4XQzW6EIBAH8FfZcPbA8LXotT3vCzQ9IAyGpOpG2U0b47t3
-        jE3ctU3lxBDmx/yZWMrYjqx6m1gKrGKaYwQbgzQIoRRa1RyU4SUrWOdapBu+
-        D6npqc5f16Xubm2NA5uLZ6FeheC544DRmE14ScEF3IQxD6lrdoKGUlqnrZBe
-        R85VBNiEq/s8GEADrO3anwMHK5zY2oPL7oR37PJDDjrEPcLVirgAlEIJ+4Bc
-        +hZPlz7d3UESFX+SnD2JgNLiTulI6f9VUBvrhZDK1wAm8GXpTXldAgWC3OhT
-        e5DrL0s+T/R7lveCPr2hk4n52zDQE6wCutVn90G7ef4Gn7mWhEoCAAA=
+        H4sIAAAAAAAAA4XPsW7EIAwG4Fc5ec5AgshB1nauuvc6ONhESAVOQIYqyrsf
+        pw65k6qWid8yn/EGvnIoMH1s4AkmUMKJ0RonNSo9KHsmMUg1WuggYuDWYRP5
+        JbVcv6/3HNcwc4a9exb4RyA5jKIR6A7hxRMSH0Kp2cflWZDUno7ckzFa9KLX
+        RslDeM/J+VIuqxAs018SO9QCZ6fpbFCpWdyPOqRXrHgiPkUs1geO9UEjrPyv
+        9fCrtxR+2eqzgysurbKBXXNuI2DqW1eq+NVu+34DWb8z3oQBAAA=
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 19:39:42 GMT
+  recorded_at: Fri, 11 Jan 2013 19:48:48 GMT
 - request:
     method: put
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/custom_fields/50ef18fb36e1d9dc0a01ef66
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001/custom_fields/50f06c9e38a582d3260023af
     body:
       encoding: US-ASCII
       string: ! '{"custom_field":{"name":"city"}}'
@@ -219,7 +217,7 @@ http_interactions:
       Server:
       - nginx/1.1.2
       Date:
-      - Thu, 10 Jan 2013 19:39:42 GMT
+      - Fri, 11 Jan 2013 19:48:48 GMT
       Connection:
       - keep-alive
       Status:
@@ -229,19 +227,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 0a866abc65040474632299ceb8ba9b5b
+      - a6f855f94e21b23ed795f75d8a610fa3
       X-Runtime:
-      - '0.018560'
+      - '0.015185'
       X-Rack-Cache:
       - invalidate, pass
     body:
       encoding: US-ASCII
       string: ''
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 19:39:42 GMT
+  recorded_at: Fri, 11 Jan 2013 19:48:48 GMT
 - request:
     method: get
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50ee568b2234cb116d000001/custom_fields/50ef18fb36e1d9dc0a01ef66
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001/custom_fields/50f06c9e38a582d3260023af
     body:
       encoding: US-ASCII
       string: ''
@@ -265,7 +263,7 @@ http_interactions:
         bmdpbngvMS4xLjI=
       !binary "RGF0ZQ==":
       - !binary |-
-        VGh1LCAxMCBKYW4gMjAxMyAxOTozOTo0MiBHTVQ=
+        RnJpLCAxMSBKYW4gMjAxMyAxOTo0ODo0OCBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -286,16 +284,16 @@ http_interactions:
         SUU9RWRnZSxjaHJvbWU9MQ==
       !binary "RXRhZw==":
       - !binary |-
-        ImI4NjIyMmQxZDNjODg0NDE3NmQzZmQ5ODVlYjA2NWRjIg==
+        IjVkNjNiZWNmZTY3NDU3YjhhNGZkNzYzYjY4ZjFmYWViIg==
       !binary "Q2FjaGUtQ29udHJvbA==":
       - !binary |-
         bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        Y2E2MmYzZjgxNjcxYTE5MWVjOWEwZGYzMmU4NGU4MTM=
+        ZWE0M2YxY2JhYmU4OGUzMGYyNTc3MDU1MzU1NmE3ZDI=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wMTE3NzE=
+        MC4wMDg1NTE=
       !binary "WC1SYWNrLUNhY2hl":
       - !binary |-
         bWlzcw==
@@ -305,9 +303,9 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA3XKSwqFMAyF4a1cMr5CYrU+NiO1SaUDRTQORNy7cQHCmXyH
-        /4LM0EONkqhNo/NC3HHEgCTJe/jDEmaxImY9TXqur3bd8jKZ4yZBhYeg9pIr
-        kArCHzW962wWHCt/BlUJ9wM5YrVPgQAAAA==
+        H4sIAAAAAAAAA3XKQQ5AMBBA0avIrElmWqp6GZm0JV0QYSxE3N04gOX7+TeU
+        BAE6nNDFIVvPnTfJGodoLE9Qw8pL1iMWuVRybZ8O2cs6q+OeWXIaWbSSbZAa
+        oor60PrQOh3OLf0PHp4XloJocIEAAAA=
     http_version: 
-  recorded_at: Thu, 10 Jan 2013 19:39:42 GMT
+  recorded_at: Fri, 11 Jan 2013 19:48:49 GMT
 recorded_with: VCR 2.3.0

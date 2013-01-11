@@ -3,3 +3,4 @@ require "locaweb-emailmarketing/clients/base_client"
 require 'locaweb-emailmarketing/clients/account_client'
 require 'locaweb-emailmarketing/clients/custom_field_client'
 require 'locaweb-emailmarketing/clients/campaign_client'
+require 'locaweb-emailmarketing/clients/contact_import_client'
