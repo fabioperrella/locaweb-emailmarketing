@@ -7,7 +7,7 @@ http://emailmarketing.locaweb.com.br/trial
 
 # How to use
 
-client = Client.new auth_token: "apikey", base_url: 'https://emailmarketing.locaweb.com.br'
+client = Locaweb::Emailmarketing::Client.new auth_token: "TOKEN", base_url: 'https://emailmarketing.locaweb.com.br/api/v1', account_id: 'ID'
 
 Accounts:
 - list: client.accounts.all
