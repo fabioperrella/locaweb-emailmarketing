@@ -31,6 +31,20 @@ module Locaweb
       def destroy(id)
         @http_request_adapter.delete "accounts/#{@account_id}/#{@resource_name}/#{id}"
       end
+
+      private
+
+      def required_keys_to_update(required_keys_to_update)
+        @required_keys_to_update = required_keys_to_update
+      end
+
+      def required_keys_to_create(required_keys_to_create)
+        @required_keys_to_create = required_keys_to_create
+      end
+
+      def resource_name(resource_name)
+        @resource_name = resource_name
+      end
     end
   end
 end
