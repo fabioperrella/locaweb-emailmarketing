@@ -50,4 +50,24 @@ shared_examples_for "a base client" do |resource_name|
       client.send(resource_name).create(attributes).should == "12"
     end
   end
+
+  describe ".update" do
+    let(:resource_id) { "12334" }
+    let(:attributes) do
+      attrs = {}
+      requires_keys_to_update.each { |key| attrs[key] = "any_value" }
+      attrs
+    end
+
+    context "when invalid attributes" do
+      it "raise ArgumentError exception" do
+        lambda{ client.send(resource_name).update(resource_id, lalapopo: 1) }.should raise_exception ArgumentError
+      end
+    end
+
+    it "calls http PUT to #{resource_name} update url" do
+      HttpRequestAdapter.any_instance.should_receive(:put).with("accounts/#{TRIAL_ACCOUNT_ID}/#{resource_name}/#{resource_id}", {resource_name.singularize.to_sym => attributes})
+      client.send(resource_name).update(resource_id, attributes)
+    end
+  end
 end
