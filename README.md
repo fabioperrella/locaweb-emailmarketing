@@ -48,6 +48,15 @@ Custom Fields:
   available options: name
 - destroy: client.custom_fields.destroy("ID")
 
+Domains:
+- list: client.domains.all
+- get: client.domains.get("ID")
+- create: client.domains.create(options)<br />
+  available options: required: [:name]
+- update: client.domains.update("ID", options)<br />
+  available options: required: [:name, :default]
+- destroy: client.domains.destroy("ID")
+
 Lists:
 - list: client.lists.all
 - get: client.lists.get("ID")
