@@ -15,15 +15,6 @@ Accounts:
 - update: client.accounts.update("ID", hash_options)
   available options: return_path_domain
 
-Custom Fields:
-- list: client.custom_fields.all
-- get: client.custom_fields.get("ID")
-- create: client.custom_fields.create(options)
-  available options: name, type
-- update: client.custom_fields.update("ID", options)
-  available options: name
-- destroy: client.custom_fields.destroy("ID")
-
 Campaigns:
 - list: client.campaigns.all
 - get: client.campaigns.get("ID")
@@ -32,6 +23,21 @@ Campaigns:
 - update: client.campaigns.update("ID", options)
   available options: name, description
 - destroy: client.campaigns.destroy("ID")
+
+Contact Imports:
+- list: client.contact_imports.all
+- get: client.contact_imports.get("ID")
+- create: client.contact_imports.create(options)
+  available options: required: [:name, :list_tokens, :url], optional: [:description]
+
+Custom Fields:
+- list: client.custom_fields.all
+- get: client.custom_fields.get("ID")
+- create: client.custom_fields.create(options)
+  available options: name, type
+- update: client.custom_fields.update("ID", options)
+  available options: name
+- destroy: client.custom_fields.destroy("ID")
 
 Lists:
 - list: client.lists.all
