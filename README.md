@@ -32,3 +32,12 @@ Campaigns:
 - update: client.campaigns.update("ID", options)
   available options: name, description
 - destroy: client.campaigns.destroy("ID")
+
+Lists:
+- list: client.lists.all
+- get: client.lists.get("ID")
+- create: client.lists.create(options)
+  available options: name
+- update: client.lists.update("ID", options)
+  available options: name
+- destroy: client.lists.destroy("ID")
