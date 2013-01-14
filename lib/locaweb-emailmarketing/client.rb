@@ -31,6 +31,10 @@ module Locaweb
       def contacts
         @contacts ||= ContactClient.new @http_request_adapter, @account_id
       end
+
+      def domains
+        @domains ||= DomainClient.new @http_request_adapter, @account_id
+      end
     end
   end
 end
