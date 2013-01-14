@@ -27,7 +27,7 @@ Campaigns:
 Contact Imports:
 - list: client.contact_imports.all
 - get: client.contact_imports.get("ID")
-- create: client.contact_imports.create(options)
+- create: client.contact_imports.create(options)<br />
   available options: required: [:name, :list_tokens, :url], optional: [:description]
 
 Custom Fields:
