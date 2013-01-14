@@ -8,11 +8,11 @@ module Locaweb
       end
 
       def update(*args)
-        raise(ArgumentError, "Unavailable action to this resource")
+        raise(NotImplementedError, "Unavailable action to this resource")
       end
 
       def destroy(*args)
-        raise(ArgumentError, "Unavailable action to this resource")
+        raise(NotImplementedError, "Unavailable action to this resource")
       end
     end
   end

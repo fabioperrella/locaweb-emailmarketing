@@ -89,4 +89,12 @@ shared_examples_for "a base client" do |resource_name, except = []|
       end
     end
   end
+
+  except.each do |not_implemented_method|
+    describe ".not_implemented_method" do
+      it "raises not implemented method error" do
+        lambda { client.send(resource_name).send(not_implemented_method) }.should raise_exception NotImplementedError
+      end
+    end
+  end
 end
