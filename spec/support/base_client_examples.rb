@@ -28,6 +28,12 @@ shared_examples_for "a base client" do |resource_name|
   end
 
   describe ".create" do
+    let(:attributes) do
+      attrs = {}
+      requires_keys_to_create.each { |key| attrs[key] = "any_value" }
+      attrs
+    end
+
     context "when invalid attributes" do
       it "raise ArgumentError exception" do
         lambda{ client.send(resource_name).create(lalapopo: 1) }.should raise_exception ArgumentError
@@ -35,10 +41,13 @@ shared_examples_for "a base client" do |resource_name|
     end
 
     it "calls http POST to #{resource_name} create url" do
-      attributes = { }
-      requires_keys_to_create.each { |key| attributes[key] = "any_value" }
-      HttpRequestAdapter.any_instance.should_receive(:post).with("accounts/#{TRIAL_ACCOUNT_ID}/#{resource_name}", {resource_name.singularize.to_sym => attributes}).and_return({"id" => 12})
+      HttpRequestAdapter.any_instance.should_receive(:post).with("accounts/#{TRIAL_ACCOUNT_ID}/#{resource_name}", {resource_name.singularize.to_sym => attributes}).and_return(%q|{"id": "12"}|)
       client.send(resource_name).create(attributes)
+    end
+
+    it "returns created #{resource_name.singularize}'s id" do
+      HttpRequestAdapter.any_instance.stub(:post).and_return(%q|{"id": "12"}|)
+      client.send(resource_name).create(attributes).should == "12"
     end
   end
 end
