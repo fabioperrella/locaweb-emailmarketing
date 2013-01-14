@@ -27,6 +27,10 @@ module Locaweb
       def lists
         @lists ||= ListClient.new @http_request_adapter, @account_id
       end
+
+      def contacts
+        @contacts ||= ContactClient.new @http_request_adapter, @account_id
+      end
     end
   end
 end

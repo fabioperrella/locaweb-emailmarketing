@@ -32,6 +32,8 @@ Contact Imports:
 - create: client.contact_imports.create(options)<br />
   available options: required: [:name, :list_tokens, :url], optional: [:description]
 
+Contacts:
+
 Custom Fields:
 - list: client.custom_fields.all
 - get: client.custom_fields.get("ID")
