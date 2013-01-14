@@ -70,4 +70,13 @@ shared_examples_for "a base client" do |resource_name|
       client.send(resource_name).update(resource_id, attributes)
     end
   end
+
+  describe ".destroy" do
+    let(:resource_id) { "lalapopolala" }
+
+    it "calls http DELETE to #{resource_name} delete url" do
+      HttpRequestAdapter.any_instance.should_receive(:delete).with("accounts/#{TRIAL_ACCOUNT_ID}/#{resource_name}/#{resource_id}")
+      client.send(resource_name).destroy(resource_id)
+    end
+  end
 end
