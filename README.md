@@ -7,20 +7,22 @@ http://emailmarketing.locaweb.com.br/trial
 
 # How to use
 
-client = Locaweb::Emailmarketing::Client.new auth_token: "TOKEN", base_url: 'https://emailmarketing.locaweb.com.br/api/v1', account_id: 'ID'
+client = Locaweb::Emailmarketing::Client.new auth_token: "TOKEN",
+                                             base_url: 'https://emailmarketing.locaweb.com.br/api/v1',
+                                             account_id: 'ID'
 
 Accounts:
 - list: client.accounts.all
 - get: client.acccounts.get("ID")
-- update: client.accounts.update("ID", hash_options)
+- update: client.accounts.update("ID", hash_options)<br />
   available options: return_path_domain
 
 Campaigns:
 - list: client.campaigns.all
 - get: client.campaigns.get("ID")
-- create: client.campaigns.create(options)
+- create: client.campaigns.create(options)<br />
   available options: name, description
-- update: client.campaigns.update("ID", options)
+- update: client.campaigns.update("ID", options)<br />
   available options: name, description
 - destroy: client.campaigns.destroy("ID")
 
@@ -33,17 +35,17 @@ Contact Imports:
 Custom Fields:
 - list: client.custom_fields.all
 - get: client.custom_fields.get("ID")
-- create: client.custom_fields.create(options)
+- create: client.custom_fields.create(options)<br />
   available options: name, type
-- update: client.custom_fields.update("ID", options)
+- update: client.custom_fields.update("ID", options)<br />
   available options: name
 - destroy: client.custom_fields.destroy("ID")
 
 Lists:
 - list: client.lists.all
 - get: client.lists.get("ID")
-- create: client.lists.create(options)
+- create: client.lists.create(options)<br />
   available options: name
-- update: client.lists.update("ID", options)
+- update: client.lists.update("ID", options)<br />
   available options: name
 - destroy: client.lists.destroy("ID")
