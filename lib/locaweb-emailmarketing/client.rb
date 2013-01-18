@@ -51,6 +51,10 @@ module Locaweb
       def unsubscribe_reasons
         @unsubscribe_reasons ||= UnsubscribeReasonClient.new @http_request_adapter, @account_id
       end
+
+      def templates
+        @templates ||= TemplateClient.new @http_request_adapter, @account_id
+      end
     end
   end
 end
