@@ -11,9 +11,9 @@ Trial account: [http://emailmarketing.locaweb.com.br/trial](http://emailmarketin
 
 ## Client
 <pre>
-client = Locaweb::Emailmarketing::Client.new auth_token: "Nt5skc1xXsvKKSsyp3Bsx7ABNdJz9pc1uA9kyTdjnJkr",
+client = Locaweb::Emailmarketing::Client.new auth_token: "TOKEN",
                                              base_url: 'https://emailmarketing.locaweb.com.br/api/v1',
-                                             account_id: '50f8e28abf8d79f935000001'
+                                             account_id: 'ID'
 </pre>
 ## Accounts
 - list: client.accounts.all
