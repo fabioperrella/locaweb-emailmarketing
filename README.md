@@ -123,3 +123,11 @@ More info: [http://wiki.locaweb.com.br/pt-br/APIs_Novo_Email_Marketing/Gerenciar
 - update: client.unsubscribe_reasons.update("ID", options)<br />
   available options: name
 - destroy: client.unsubscribe_reasons.destroy("ID")
+
+## Other
+
+### Pagination
+To return a specif page, pass param to method <i>all</i> like this:
+<pre>
+  client.contacts.all(4)
+</pre>
