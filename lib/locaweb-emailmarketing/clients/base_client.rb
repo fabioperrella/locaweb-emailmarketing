@@ -9,8 +9,10 @@ module Locaweb
         @required_keys_to_create = {optional: [], required: []}
       end
 
-      def all
-        @http_request_adapter.get "accounts/#{@account_id}/#{@resource_name}"
+      def all(page=1)
+        url = "accounts/#{@account_id}/#{@resource_name}"
+        url = "#{url}?page=#{page}" if page != 1
+        @http_request_adapter.get url
       end
 
       def get(id)

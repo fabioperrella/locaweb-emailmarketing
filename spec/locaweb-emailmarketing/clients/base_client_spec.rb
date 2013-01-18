@@ -14,6 +14,13 @@ describe Locaweb::Emailmarketing::CustomFieldClient do
         client.custom_fields.all["items"].find{|c| c["name"] == "Cidadee"}.should include("name"=>"Cidadee", "type"=>"string")
       end
     end
+
+    context "when passing page param" do
+      it "returns page required" do
+        HttpRequestAdapter.any_instance.should_receive(:get).with(/page=2/)
+        client.custom_fields.all(2)
+      end
+    end
   end
 
   describe ".get" do
