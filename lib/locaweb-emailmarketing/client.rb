@@ -35,6 +35,10 @@ module Locaweb
       def domains
         @domains ||= DomainClient.new @http_request_adapter, @account_id
       end
+
+      def messages
+        @messages ||= MessageClient.new @http_request_adapter, @account_id
+      end
     end
   end
 end
