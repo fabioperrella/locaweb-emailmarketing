@@ -10,6 +10,10 @@ module Locaweb
       def overview(message_id)
         @http_request_adapter.get "accounts/#{@account_id}/#{@resource_name}/#{message_id}/overview"
       end
+
+      def openings(message_id)
+        @http_request_adapter.get "accounts/#{@account_id}/#{@resource_name}/#{message_id}/openings"
+      end
     end
   end
 end
