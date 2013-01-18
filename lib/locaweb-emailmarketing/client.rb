@@ -43,6 +43,10 @@ module Locaweb
       def reports
         @reports ||= ReportClient.new @http_request_adapter, @account_id
       end
+
+      def senders
+        @senders ||= SenderClient.new @http_request_adapter, @account_id
+      end
     end
   end
 end
