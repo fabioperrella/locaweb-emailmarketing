@@ -95,3 +95,15 @@ Trial account: [http://emailmarketing.locaweb.com.br/trial](http://emailmarketin
     client.messages.update("ID", {subject: "lalapopo2"})
 </pre>
 - destroy: client.messages.destroy("ID")
+
+More info: [http://wiki.locaweb.com.br/pt-br/APIs_Novo_Email_Marketing/Gerenciar_Mensagens](http://wiki.locaweb.com.br/pt-br/APIs_Novo_Email_Marketing/Gerenciar_Mensagens)
+
+## Reports
+- overview: client.messages.overview("ID")
+- openings: client.messages.openings("ID")
+- uniq_openings: client.messages.uniq_openings("ID")
+- links: client.messages.links("ID")
+- clicks: client.messages.clicks("ID")
+- bounces: client.messages.bounces("ID")
+
+More info: [http://wiki.locaweb.com.br/pt-br/APIs_Novo_Email_Marketing/Gerenciar_Relatorios](http://wiki.locaweb.com.br/pt-br/APIs_Novo_Email_Marketing/Gerenciar_Relatorios)
