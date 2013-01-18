@@ -107,3 +107,10 @@ More info: [http://wiki.locaweb.com.br/pt-br/APIs_Novo_Email_Marketing/Gerenciar
 - bounces: client.messages.bounces("ID")
 
 More info: [http://wiki.locaweb.com.br/pt-br/APIs_Novo_Email_Marketing/Gerenciar_Relatorios](http://wiki.locaweb.com.br/pt-br/APIs_Novo_Email_Marketing/Gerenciar_Relatorios)
+
+## Senders:
+- list: client.senders.all
+- get: client.senders.get("ID")
+- create: client.senders.create(options)<br />
+  available options: email
+- destroy: client.senders.destroy("ID")
