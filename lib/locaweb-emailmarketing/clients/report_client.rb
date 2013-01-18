@@ -19,6 +19,10 @@ module Locaweb
         do_report_request message_id, "uniq_openings"
       end
 
+      def links(message_id)
+        do_report_request message_id, "links"
+      end
+
       private
 
       def do_report_request(message_id, report_name)

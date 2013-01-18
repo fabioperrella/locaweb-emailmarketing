@@ -37,4 +37,14 @@ describe Locaweb::Emailmarketing::ReportClient do
       end
     end
   end
+
+  describe ".links" do
+    it "returns links of a message" do
+      VCR.use_cassette('reports_links') do
+        data = client.reports.links(message_id).first
+        expected_keys = ["href", "name"]
+        (data.keys & expected_keys).should =~ expected_keys
+      end
+    end
+  end
 end
