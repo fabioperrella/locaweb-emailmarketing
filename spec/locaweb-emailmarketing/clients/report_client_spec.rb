@@ -47,4 +47,14 @@ describe Locaweb::Emailmarketing::ReportClient do
       end
     end
   end
+
+  describe ".clicks" do
+    it "returns clicks of a message" do
+      VCR.use_cassette('reports_clicks') do
+        data = client.reports.clicks(message_id).first
+        expected_keys = ["href", "email", "ip", "access_at"]
+        (data.keys & expected_keys).should =~ expected_keys
+      end
+    end
+  end
 end

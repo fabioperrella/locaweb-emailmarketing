@@ -23,6 +23,10 @@ module Locaweb
         do_report_request message_id, "links"
       end
 
+      def clicks(message_id)
+        do_report_request message_id, "clicks"
+      end
+
       private
 
       def do_report_request(message_id, report_name)
