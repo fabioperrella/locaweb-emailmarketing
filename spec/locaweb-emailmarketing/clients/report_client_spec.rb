@@ -27,4 +27,14 @@ describe Locaweb::Emailmarketing::ReportClient do
       end
     end
   end
+
+  describe ".uniq_openings" do
+    it "returns message_id of a message" do
+      VCR.use_cassette('reports_uniq_openings') do
+        data = client.reports.uniq_openings(message_id).first
+        expected_keys = ["email", "ip", "access_at"]
+        (data.keys & expected_keys).should =~ expected_keys
+      end
+    end
+  end
 end

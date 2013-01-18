@@ -8,11 +8,21 @@ module Locaweb
       end
 
       def overview(message_id)
-        @http_request_adapter.get "accounts/#{@account_id}/#{@resource_name}/#{message_id}/overview"
+        do_report_request message_id, "overview"
       end
 
       def openings(message_id)
-        @http_request_adapter.get "accounts/#{@account_id}/#{@resource_name}/#{message_id}/openings"
+        do_report_request message_id, "openings"
+      end
+
+      def uniq_openings(message_id)
+        do_report_request message_id, "uniq_openings"
+      end
+
+      private
+
+      def do_report_request(message_id, report_name)
+        @http_request_adapter.get "accounts/#{@account_id}/#{@resource_name}/#{message_id}/#{report_name}"
       end
     end
   end

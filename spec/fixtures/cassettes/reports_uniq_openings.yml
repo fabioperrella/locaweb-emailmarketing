@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50f8e28abf8d79f935000001/messages/50f9828436e1d9ce0d000fd5/uniq_openings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - Nt5skc1xXsvKKSsyp3Bsx7ABNdJz9pc1uA9kyTdjnJkr
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbngvMS4xLjI=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAxOCBKYW4gMjAxMyAxNzozNjo1NiBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "RXRhZw==":
+      - !binary |-
+        IjRkOGQyOWRlN2E3NDEwZWU4MmI0NGFmMWY4Y2M3MTMxIg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        NzlkZGZiNmJjOWZiZDMzMGFlZTgxZGI5NzhjOTY1ZjE=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMzA2MjY=
+      !binary "WC1SYWNrLUNhY2hl":
+      - !binary |-
+        bWlzcw==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA4uuVkrNTczMUbJSSktMyszXK0gtKkrNyUnULs0rLk0qTi7K
+        TEp1SAcp0UvOz1XSUcosAKo1tDDTMzIy0DM0AGJLoGhicnJqcXF8YglI0ljX
+        wFDX0ELB0NTK0MLK1EipVgeXNZQYbWllADQ6FgC3MW2IwwAAAA==
+    http_version: 
+  recorded_at: Fri, 18 Jan 2013 17:36:56 GMT
+recorded_with: VCR 2.3.0
