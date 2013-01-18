@@ -47,6 +47,10 @@ module Locaweb
       def senders
         @senders ||= SenderClient.new @http_request_adapter, @account_id
       end
+
+      def unsubscribe_reasons
+        @unsubscribe_reasons ||= UnsubscribeReasonClient.new @http_request_adapter, @account_id
+      end
     end
   end
 end

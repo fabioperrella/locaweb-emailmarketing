@@ -114,3 +114,12 @@ More info: [http://wiki.locaweb.com.br/pt-br/APIs_Novo_Email_Marketing/Gerenciar
 - create: client.senders.create(options)<br />
   available options: email
 - destroy: client.senders.destroy("ID")
+
+## Unsubscribe Reasons:
+- list: client.unsubscribe_reasons.all
+- get: client.unsubscribe_reasons.get("ID")
+- create: client.unsubscribe_reasons.create(options)<br />
+  available options: name
+- update: client.unsubscribe_reasons.update("ID", options)<br />
+  available options: name
+- destroy: client.unsubscribe_reasons.destroy("ID")
