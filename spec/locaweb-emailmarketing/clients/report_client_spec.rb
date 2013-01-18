@@ -57,4 +57,14 @@ describe Locaweb::Emailmarketing::ReportClient do
       end
     end
   end
+
+  describe ".bounces" do
+    it "returns bounces of a message" do
+      VCR.use_cassette('reports_bounces') do
+        data = client.reports.bounces(message_id).first
+        expected_keys = ["status", "email", "diagnostic", "access_at"]
+        (data.keys & expected_keys).should =~ expected_keys
+      end
+    end
+  end
 end

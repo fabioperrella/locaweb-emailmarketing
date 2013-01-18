@@ -27,6 +27,10 @@ module Locaweb
         do_report_request message_id, "clicks"
       end
 
+      def bounces(message_id)
+        do_report_request message_id, "bounces"
+      end
+
       private
 
       def do_report_request(message_id, report_name)
