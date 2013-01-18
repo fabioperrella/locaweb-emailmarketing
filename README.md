@@ -11,17 +11,17 @@ Trial account: [http://emailmarketing.locaweb.com.br/trial](http://emailmarketin
 
 ## Client
 <pre>
-    client = Locaweb::Emailmarketing::Client.new auth_token: "Nt5skc1xXsvKKSsyp3Bsx7ABNdJz9pc1uA9kyTdjnJkr",
+client = Locaweb::Emailmarketing::Client.new auth_token: "Nt5skc1xXsvKKSsyp3Bsx7ABNdJz9pc1uA9kyTdjnJkr",
                                              base_url: 'https://emailmarketing.locaweb.com.br/api/v1',
                                              account_id: '50f8e28abf8d79f935000001'
 </pre>
-## Accounts:
+## Accounts
 - list: client.accounts.all
 - get: client.acccounts.get("ID")
 - update: client.accounts.update("ID", hash_options)<br />
   available options: return_path_domain
 
-## Campaigns:
+## Campaigns
 - list: client.campaigns.all
 - get: client.campaigns.get("ID")
 - create: client.campaigns.create(options)<br />
@@ -30,13 +30,13 @@ Trial account: [http://emailmarketing.locaweb.com.br/trial](http://emailmarketin
   available options: name, description
 - destroy: client.campaigns.destroy("ID")
 
-## Contact Imports:
+## Contact Imports
 - list: client.contact_imports.all
 - get: client.contact_imports.get("ID")
 - create: client.contact_imports.create(options)<br />
   available options: required: [:name, :list_tokens, :url], optional: [:description]
 
-## Contacts:
+## Contacts
 - list: client.contacts.all
 - get: client.contacts.get("ID")
 - create: client.contacts.create(options)<br />
@@ -45,7 +45,7 @@ Trial account: [http://emailmarketing.locaweb.com.br/trial](http://emailmarketin
   available options: required: [:email, :list_ids], optional: [:custom_fields]
 - destroy: client.contacts.destroy("ID")
 
-## Custom Fields:
+## Custom Fields
 - list: client.custom_fields.all
 - get: client.custom_fields.get("ID")
 - create: client.custom_fields.create(options)<br />
@@ -54,7 +54,7 @@ Trial account: [http://emailmarketing.locaweb.com.br/trial](http://emailmarketin
   available options: name
 - destroy: client.custom_fields.destroy("ID")
 
-## Domains:
+## Domains
 - list: client.domains.all
 - get: client.domains.get("ID")
 - create: client.domains.create(options)<br />
@@ -63,7 +63,7 @@ Trial account: [http://emailmarketing.locaweb.com.br/trial](http://emailmarketin
   available options: required: [:name, :default]
 - destroy: client.domains.destroy("ID")
 
-## Lists:
+## Lists
 - list: client.lists.all
 - get: client.lists.get("ID")
 - create: client.lists.create(options)<br />
@@ -72,7 +72,7 @@ Trial account: [http://emailmarketing.locaweb.com.br/trial](http://emailmarketin
   available options: name
 - destroy: client.lists.destroy("ID")
 
-## Messages:
+## Messages
 - list: client.messages.all
 - get: client.messages.get("ID")
 - create: client.messages.create(options)<br />
@@ -108,14 +108,14 @@ More info: [http://wiki.locaweb.com.br/pt-br/APIs_Novo_Email_Marketing/Gerenciar
 
 More info: [http://wiki.locaweb.com.br/pt-br/APIs_Novo_Email_Marketing/Gerenciar_Relatorios](http://wiki.locaweb.com.br/pt-br/APIs_Novo_Email_Marketing/Gerenciar_Relatorios)
 
-## Senders:
+## Senders
 - list: client.senders.all
 - get: client.senders.get("ID")
 - create: client.senders.create(options)<br />
   available options: email
 - destroy: client.senders.destroy("ID")
 
-## Unsubscribe Reasons:
+## Unsubscribe Reasons
 - list: client.unsubscribe_reasons.all
 - get: client.unsubscribe_reasons.get("ID")
 - create: client.unsubscribe_reasons.create(options)<br />
