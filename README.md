@@ -90,5 +90,8 @@ Trial account: [http://emailmarketing.locaweb.com.br/trial](http://emailmarketin
     })
 </pre>
 - update: client.messages.update("ID", options)<br />
-  available options: name
+  Example:
+<pre>
+    client.messages.update("ID", {subject: "lalapopo2"})
+</pre>
 - destroy: client.messages.destroy("ID")
