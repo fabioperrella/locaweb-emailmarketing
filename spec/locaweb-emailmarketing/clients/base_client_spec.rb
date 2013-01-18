@@ -10,8 +10,8 @@ describe Locaweb::Emailmarketing::CustomFieldClient do
   describe ".all" do
     it "returns all custom_fields" do
       VCR.use_cassette('custom_field_all') do
-        client.custom_fields.create(name: "Cidade", type: "string")
-        client.custom_fields.all["items"].find{|c| c["name"] == "Cidade"}.should include("name"=>"Cidade", "type"=>"string")
+        client.custom_fields.create(name: "Cidadee", type: "string")
+        client.custom_fields.all["items"].find{|c| c["name"] == "Cidadee"}.should include("name"=>"Cidadee", "type"=>"string")
       end
     end
   end

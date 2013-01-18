@@ -39,6 +39,10 @@ module Locaweb
       def messages
         @messages ||= MessageClient.new @http_request_adapter, @account_id
       end
+
+      def reports
+        @reports ||= ReportClient.new @http_request_adapter, @account_id
+      end
     end
   end
 end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001/custom_fields
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50f8e28abf8d79f935000001/custom_fields
     body:
       encoding: US-ASCII
       string: ! '{"custom_field":{"name":"lalapopo","type":"number"}}'
@@ -30,7 +30,7 @@ http_interactions:
         bmdpbngvMS4xLjI=
       !binary "RGF0ZQ==":
       - !binary |-
-        RnJpLCAxMSBKYW4gMjAxMyAxOTo0ODo0OSBHTVQ=
+        RnJpLCAxOCBKYW4gMjAxMyAxNzowMDoxOCBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -51,16 +51,16 @@ http_interactions:
         SUU9RWRnZSxjaHJvbWU9MQ==
       !binary "RXRhZw==":
       - !binary |-
-        IjgyNjIwNTgxMzY3OTQwYzg3ZjkxN2NmY2QzN2IxMTkzIg==
+        IjFmOGNjMzBlNzVlOTExODI5MzBmOTU3YTQwNDkyM2Q4Ig==
       !binary "Q2FjaGUtQ29udHJvbA==":
       - !binary |-
         bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        ZjcxMWFkNThiMGU2ZTAwYmM3NjkyZWQwOWUyMzAxMjU=
+        NzA2ZDRlMDQ2M2Q2M2MxMTViNjE5ZGNiMjNmMmM1ZDQ=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wMTU5OTg=
+        MC4wMjI1NzI=
       !binary "WC1SYWNrLUNhY2hl":
       - !binary |-
         aW52YWxpZGF0ZSwgcGFzcw==
@@ -70,13 +70,13 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA6tWykxRslIyNUgzMEtONDS2SDS1MDJPNjQ1MLI0MzRTqgUA
-        O9LpQSEAAAA=
+        H4sIAAAAAAAAA6tWykxRslIyNUizNE9LNDK2SDS1MEo1NUgxMDBPNU5UqgUA
+        hsYCOCEAAAA=
     http_version: 
-  recorded_at: Fri, 11 Jan 2013 19:48:49 GMT
+  recorded_at: Fri, 18 Jan 2013 17:00:18 GMT
 - request:
     method: delete
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001/custom_fields/50f06ca138a5827c15029616
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50f8e28abf8d79f935000001/custom_fields/50f97fa238a582e50d007e3a
     body:
       encoding: US-ASCII
       string: ''
@@ -97,7 +97,7 @@ http_interactions:
       Server:
       - nginx/1.1.2
       Date:
-      - Fri, 11 Jan 2013 19:48:49 GMT
+      - Fri, 18 Jan 2013 17:00:18 GMT
       Connection:
       - keep-alive
       Status:
@@ -107,19 +107,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 5a18a29f2772af9375cf6be91b62af92
+      - 185b92335177b7f59c834009c5592049
       X-Runtime:
-      - '0.012693'
+      - '0.020862'
       X-Rack-Cache:
       - invalidate, pass
     body:
       encoding: US-ASCII
       string: ''
     http_version: 
-  recorded_at: Fri, 11 Jan 2013 19:48:49 GMT
+  recorded_at: Fri, 18 Jan 2013 17:00:18 GMT
 - request:
     method: get
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001/custom_fields/50f06ca138a5827c15029616
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50f8e28abf8d79f935000001/custom_fields/50f97fa238a582e50d007e3a
     body:
       encoding: US-ASCII
       string: ''
@@ -143,7 +143,7 @@ http_interactions:
         bmdpbngvMS4xLjI=
       !binary "RGF0ZQ==":
       - !binary |-
-        RnJpLCAxMSBKYW4gMjAxMyAxOTo0ODo0OSBHTVQ=
+        RnJpLCAxOCBKYW4gMjAxMyAxNzowMDoxOCBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -167,10 +167,10 @@ http_interactions:
         bm8tY2FjaGU=
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        NmU4ZjIzZTIzNjNlNTExMWFmMDIyNWRkZTU0MGYxYjA=
+        ZDkxZWYyOThlMWYwZmQyYTJmODE2MDAxMDk3ZTdjZGM=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wMTA3MzU=
+        MC4wMzc5ODg=
       !binary "WC1SYWNrLUNhY2hl":
       - !binary |-
         bWlzcw==
@@ -183,5 +183,5 @@ http_interactions:
         H4sIAAAAAAAAA6tWSi0qyi9SslLyT8pKLclXyIspNTBINc5XSM1Lzs8rKUpM
         yVeqBQC/d9ipJgAAAA==
     http_version: 
-  recorded_at: Fri, 11 Jan 2013 19:48:49 GMT
+  recorded_at: Fri, 18 Jan 2013 17:00:18 GMT
 recorded_with: VCR 2.3.0

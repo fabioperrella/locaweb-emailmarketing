@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50efa80abf8d79a55b000001
+    uri: https://emailmarketing.locaweb.com.br/api/v1/accounts/50f8e28abf8d79f935000001
     body:
       encoding: US-ASCII
       string: ''
@@ -26,7 +26,7 @@ http_interactions:
         bmdpbngvMS4xLjI=
       !binary "RGF0ZQ==":
       - !binary |-
-        RnJpLCAxMSBKYW4gMjAxMyAxOTo0NzowMSBHTVQ=
+        RnJpLCAxOCBKYW4gMjAxMyAxNzowMDoxNSBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
@@ -47,16 +47,16 @@ http_interactions:
         SUU9RWRnZSxjaHJvbWU9MQ==
       !binary "RXRhZw==":
       - !binary |-
-        ImNlNDU4YjhkNDNmMWRjYzk5NmMyMDNlMTE1MWVjZDVkIg==
+        ImZmNjI4Y2Y0MDI4Yzc0YjEzMDY4ZTBlMmRhY2U3N2M4Ig==
       !binary "Q2FjaGUtQ29udHJvbA==":
       - !binary |-
         bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
       !binary "WC1SZXF1ZXN0LUlk":
       - !binary |-
-        MTA4Y2YzOGVhZThkMjI2NDRhMGIyMDFiZTE4MmVhYmY=
+        MWI2NzFlMmUzNGMyYmM5ZjkxMzAzNzU2MDE0YzgzOTY=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wNTE1Mjk=
+        MC4wOTMxNjE=
       !binary "WC1SYWNrLUNhY2hl":
       - !binary |-
         bWlzcw==
@@ -66,12 +66,12 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA22PzW7CMBCEX6XaM0TroKiQUx+id2tjL4ol/yDbaYRQ3r1r
-        Cr2AT6vZzzszN3AWRhiQz3REms5H+3miYZiwPQU74EDOC2I5pFhqJkPpyydD
-        K0+dSaGbslDWlYunq44UWOCaHXmRRYtP7fuhmcxU2WqqIqrDHtVeqQ88jAOO
-        2AuQuS456gvVWdsk9vF5sWs2lJPlyGtp7m9x/UO+1brBY6h54e3ubF0tbWGk
-        yxIkRZ1d0dKszjCeJHBmudT+4A7usr/CqP5nnZs1+b/0Pbb8veSHV2J17SZu
-        2y+gLtTWZAEAAA==
+        H4sIAAAAAAAAA2WPzY6DMAyEX2WVc4sCCC3ktA/Re2QSI6LNTxVMUVXx7nX6
+        s3toTtbniWfmJpwVSnRy6rHpYZx6+z1MQ9vJ8mpxEBjAeZZYDCkulMFA+vHJ
+        wIZjZVKoxswq65azh6uOEJDFlB14xszim51ezGQEQquBGNbtUdbHuv+Sreqk
+        kg0LMtKaoz4Dzdomto/vixXGi0uc5Jf+rT/l+gK+1LqJ10B5xf3hbB0tZWG4
+        yxo4Bc1u0dyMZqFqDpyRL5U/8iAe2F+FGv5mnTHiBv6ZvpElf8P5xadic+Wm
+        3Pc7GUYuQ2QBAAA=
     http_version: 
-  recorded_at: Fri, 11 Jan 2013 19:47:01 GMT
+  recorded_at: Fri, 18 Jan 2013 17:00:15 GMT
 recorded_with: VCR 2.3.0

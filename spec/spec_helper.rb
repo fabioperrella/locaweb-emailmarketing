@@ -6,7 +6,7 @@ require 'webmock'
 
 AUTH_TOKEN = 'Nt5skc1xXsvKKSsyp3Bsx7ABNdJz9pc1uA9kyTdjnJkr'
 BASE_URL = 'https://emailmarketing.locaweb.com.br/api/v1'
-TRIAL_ACCOUNT_ID = "50efa80abf8d79a55b000001"
+TRIAL_ACCOUNT_ID = "50f8e28abf8d79f935000001"
 
 Dir["./spec/support/**/*.rb"].sort.each {|f| require f}
 
